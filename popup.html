@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Lickshot</title>
+    <style>
+    body {
+      overflow: hidden;
+      background: white;
+	  background-image: url("wood2.jpg");      
+    }
+
+    div:first-child {
+      margin-top: 0px;
+    }
+
+    div {
+      cursor: pointer;
+      text-align: center;
+      padding: 3px 3px;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 0.8em;
+      width: 100px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      background: rgba(0,0,0,0.2);
+      letter-spacing: 0.08em;
+    }
+    div:hover {
+      background: rgba(0,0,0,0.6);
+      color: #efefef !important;
+    }
+    #red {
+      border: 3px solid #ef2b2d;
+      color: black;
+    }
+    #black, #black2 {
+      border: 3px solid #000;
+      color: black;
+    }
+    #green {
+      border: 3px solid #009e60;
+      color: black;
+    }
+    #yellow {
+      border: 3px solid #fce016;
+      color: black;
+    }    
+    #slider{
+	  width: 112px;
+	  margin-top: 8px;
+    margin-bottom: 10px;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	input[type='range'] {
+	  -webkit-appearance: none;
+	  -webkit-border-radius: 5px;
+	  background: url("track.png");
+	} 
+	input[type='range']:focus {
+		outline:none;
+	}
+    </style>
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+  	<div id="black2">beep</div>
+    <div id="red">horn</div>
+    <div id="yellow">laser</div>
+    <div id="green">gunshot</div>
+    <div id="black">rewind</div>
+
+	<input id="slider" type="range" min="0" max="1" value="0.5" step="0.1" />
+
+  <img src="lick.png">
+
+  </body>
+
+</html>
